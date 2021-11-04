@@ -56,6 +56,14 @@
   </main>
 </template>
 
-<script>
-export default {}
+<script setup>
+import { useHead } from '@vueuse/head'
+  useHead({
+      title: 'Vite:about ',
+      meta: [
+      {
+        name: 'description',
+        content: 'vite about system',
+      }]
+    })
 </script>

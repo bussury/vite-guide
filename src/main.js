@@ -3,12 +3,14 @@ import './assets/main.css'
 import App from './App.vue'
 import { routes } from './routes.js'
 import { createRouter, createWebHistory } from 'vue-router'
+import { createHead } from '@vueuse/head'
 
 let app = createApp(App)
 let router = createRouter({
   history: createWebHistory(),
   routes: import.meta.hot ? [] : routes,
 })
+const head = createHead()
 
 if (import.meta.hot) {
   let removeRoutes = []
@@ -28,5 +30,5 @@ if (import.meta.hot) {
 }
 
 app.use(router)
-
+app.use(head)
 app.mount('#app')

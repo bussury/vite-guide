@@ -14,3 +14,16 @@
     </div>
   </main>
 </template>
+
+<script setup>
+import { useHead } from '@vueuse/head'
+
+  useHead({
+      title: 'Vite:Home',
+      meta: [
+      {
+        name: 'description',
+        content: 'vite home ',
+      }]
+    })
+</script>
