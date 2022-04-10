@@ -7,7 +7,7 @@ import { createHead } from '@vueuse/head'
 
 let app = createApp(App)
 let router = createRouter({
-  history: createWebHistory(),
+  history: import.meta.env.SSR ? createMemoryHistory() : createWebHistory(),
   routes: import.meta.hot ? [] : routes,
 })
 const head = createHead()
@@ -23,6 +23,7 @@ if (import.meta.hot) {
     for (let removeRoute of removeRoutes) removeRoute()
     removeRoutes = []
     for (let route of routes) {
+      console.log(route)
       removeRoutes.push(router.addRoute(route))
     }
     router.replace('')
