@@ -8,7 +8,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "@vueuse/head": "^1.0.25",
+    "@vueuse/head": "^1.1.9",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
   },
@@ -18,8 +18,8 @@
     "autoprefixer": "^10.4.13",
     "cross-env": "^7.0.3",
     "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.6",
-    "vite": "^4.1.1"
+    "tailwindcss": "^3.2.7",
+    "vite": "^4.1.4"
   },
   "resolutions": {
     "postcss": "^8.4.19"
