@@ -18,8 +18,8 @@
     "autoprefixer": "^10.4.14",
     "cross-env": "^7.0.3",
     "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.7",
-    "vite": "^4.2.0"
+    "tailwindcss": "^3.3.1",
+    "vite": "^4.2.1"
   },
   "resolutions": {
     "postcss": "^8.4.19"
